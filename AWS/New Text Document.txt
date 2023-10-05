@@ -1,0 +1,9 @@
+IAM
+
+ADD MFA
+Verify in Authentication
+
+THe current created user have no policy so we can add by attach policy
+
+
+Billing Alarms Set :- Billing Prefferences
