@@ -1,0 +1,65 @@
+1.  pwd
+for getting present working directory
+
+2.  mkdir <directory path>/<directory name>  => mkdir devops
+for creating directory
+
+3.  cd <path name> => cd /home   || cd /   || cd ~
+reaching to directory
+
+4.  ls
+geting file or folders list in that directory
+
+5. ls -l <path directory> => ls /tmp/dev
+
+5.  cat <file name> => cat Vagrantfile
+read content of that file
+
+6.  whoami
+getting user name
+
+7.  history
+getting command history executed by you
+
+8.  cat /etc/os-release
+getting os info
+
+9.  touch <filename>.ext  => touch example.txt
+create file
+
+10. touch <filename>{1..10}.ext  (1 ... 10 here 1 - 10 is for loop or ranging filename)  => touch devops{1..10}-file.text
+create files according to with a file name range through numbers
+
+11. cp <filenam>.ext <path> => cp example.txt /home/backupdir
+copy file from one folder to another
+
+12. cp <absolute|static path from>/<filenam>.ext <absolute|static path to> => cp /home/example.txt /home/backupdir
+copy file from one folder to another folder according to absolute path
+
+13. cp -r <absolute|static path from>/<folder name>.ext <absolute|static path to> => cp dev backupdir/
+copy folder from one folder to another folder according to absolute path
+
+15. command name --help => cp --help
+getting help of command
+
+14.  mv devopsfile10.txt dev
+move file from one place to another
+
+15. mv ops /root/dev
+move folder from one place to another
+
+16 mv testfile.txt renamesfile121.txt
+rename file or folder
+
+
+17 mv *.txt textdir/
+regext to move all txt files
+
+18. remove file
+rm renamesfile121.txt
+
+19. rm -r mobile
+remove directory
+
+20. rm -rf *
+remove all files and directory
