@@ -1,9 +1,0 @@
-vagrant init "boxname"
-vagrant up
-vagrant ssh
-vagrant halt
-cat Vagrantfile
-vagrant destroy
-vagrant status
-vagrant global-status
-vagrant reload
