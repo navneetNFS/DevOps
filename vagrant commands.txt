@@ -1,0 +1,11 @@
+1. vagrant init boxname => vagrant file download => vagrant init eurolinux-vagrant/centos-stream-9
+2. vagrant up => running server/start (create)
+3. vagrant ssh => login
+4. vagrant halt => stop server
+5. vagrant destroy => delete VM
+6. cat Vagrantfile
+7. vagrant status => will show status of vm is running or not
+8. sudo -i => this will swith user to root user
+9. vagrant reload => this will re download varant file and install it (box namewill not change in this case for that destroy vm need)
+10. vagrant box list => this will give all virtual box list
+11. vagrant global-status => this will show you running status of all VM's
