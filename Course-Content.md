@@ -944,11 +944,12 @@ for installing os you need to download ISO
 
 ###### CentOS
 
-search for centos stream 9 iso download in chrome 
+search for centos stream 9 iso download in chrome
 
 
 
 click on this link :- https://mirror.stream.centos.org/9-stream/BaseOS/x86\_64/iso/
+
 
 
 click on this file CentOS-Stream-9-20251008.0-x86\_64-boot.iso
@@ -979,7 +980,7 @@ choose attached to as bridge adapter
 
 
 
-after that click on ok 
+after that click on ok
 
 
 
@@ -1103,7 +1104,7 @@ Vagrant for VM's
 
 a. No os installation
 
-&nbsp;  VM images/Box
+   VM images/Box
 
 free box available on vagrant cloud
 
@@ -1143,13 +1144,13 @@ e. vagrant destroy => delete VM
 
 Box/Image --------
 
-&nbsp;		  |
+ 		  |
 
-&nbsp;		Vagrant ------------------	---------------------------  Oracle VirtualBox (Hypervisor) -------------------------------------------	 VM1
+ 		Vagrant ------------------	---------------------------  Oracle VirtualBox (Hypervisor) -------------------------------------------	 VM1
 
-&nbsp;					 |	|												      |
+ 					 |	|												      |
 
-vagrant up  ---------------------------- |	|												      -- VM2		 
+vagrant up  ---------------------------- |	|												      -- VM2
 
 vagrant halt/reload/destroy ------------ Vagrant file (VM Info, Boxname , Networ , Provisioning , Sync dir , memory/cpu, disksize , etc)	      |
 
@@ -1169,7 +1170,7 @@ Folder -> Vagrant File -> vagrant up -> vagrant ssh -> vagrant halt/destroy
 
 halt => power off vm
 
-destroy => delete vm 
+destroy => delete vm
 
 # 
 
@@ -1295,7 +1296,7 @@ ssh <username>@<ipaddress>
 
 
 
-eg. 
+eg.
 
 ssh centosuser@192.168.86.9
 
@@ -1317,3 +1318,187 @@ history => this will show all executed command history
 
 
 
+**Date :- 10-11-2025**
+
+
+
+# Linux
+
+
+
+###### Topics Cover
+
+
+
+1. Intro to Linux
+2. Basic CLI commands
+3. Understanding files in Linux
+4. Filters \& Redirection
+5. Users \& Group
+6. Sudo
+7. Software Management
+8. services \& Process
+9. Good to know comments
+10. Server Management
+
+
+
+###### Open Source
+
+
+
+open source software is software with source code that anyone can inspect , modify and enhance, redistribute.
+
+
+
+History
+
+
+
+It is an open source OS
+
+
+
+**1984**
+
+=> The GNU Project and the free software foundation
+
+=> Creates open source version of Unix utility
+
+=> Creates the general public licence (GPL)
+
+
+
+**1991**
+
+Linux go towards
+
+=> Creates open source Unix like kernel , release under the GPL
+
+=> ports some GNU utilities , solicit assistance online
+
+
+
+**Today**
+
+=> Linux kernel TGNU utility = complete open source , Unix like OS
+
+
+
+###### Linux Principles
+
+
+
+1. Everything is a file (including hardware)
+2. Small single purpose programs
+3. ability to chain programs together for complex operations
+4. avoid trapped user interface (No Graphic Software)
+5. Configuration data stored in text files
+
+
+
+###### Why Linux
+
+
+
+1. Open Source
+2. Huge community support / New updates
+3. support wide variety of hardware's (mobile , laptop , server, etc)
+4. most servers run on Linux
+5. automation is easier than windows
+6. security
+
+
+
+###### Architecture of Linux
+
+
+
+
+
+please see image :- https://www.tutorialspoint.com/operating\_system/images/linux\_architecture.jpg
+
+
+
+or
+
+
+
+fig.1.linux-architure.jpg
+
+
+
+Popular Desktop Linux OS / distros
+
+
+
+1. Ubuntu Linux
+2. Linux mint
+3. Arch Linux
+4. Fedora
+5. Debian
+6. OpenSUSE
+
+
+
+Popular Server Linux OS
+
+
+
+1. Red Hat Enterprise Linux => Not Open Source
+2. Ubuntu Server
+3. CentOs
+4. SUSE Enterprise Linux
+
+
+
+Most Popular Linux distros current in IT industry
+
+
+
+**RPM based** :- RHEL, Centos, Oracle Linux
+
+package extension => exe, msi , apk
+
+
+
+RHEL , CentOS, Oracle Linux
+
+
+
+installation file for red hat based distribution
+
+
+
+**Debian based** :- Ubuntu Server, Kali Linux
+
+package extension => deb
+
+
+
+installation file for Debian based distribution
+
+
+
+Ubuntu Server , Kali Linux
+
+
+
+major difference in both is package based
+
+
+
+Some Important Directories(folders)
+
+
+
+1. Home directories :- /root , /home/username
+2. User Executables : - /bin, /usr/bin, /usr/local/bin
+3. System Executables :- /sbin, /usr/sbin, /usr/local/sbin
+4. Other Mountpoints:- /media, /mnt
+5. configuration :- /etc
+6. Temporary file :- /tmp
+7. Kernels \& bootloader :- /boot
+8. Server Data:- /var, /srv
+9. System Information :- /proc, /sys
+10. Shared libraries :- /lib, /usr/lib, /usr/local/lib
