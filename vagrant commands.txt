@@ -9,3 +9,7 @@
 9. vagrant reload => this will re download varant file and install it (box namewill not change in this case for that destroy vm need)
 10. vagrant box list => this will give all virtual box list
 11. vagrant global-status => this will show you running status of all VM's
+12. exit is use for logout from user
+13. cp /home/vagrant/devopsite2.txt /home/vagrant/dev/
+14. cp -r dev /root/backup_dir
+15. cp --help => this will help in getting help on cp command

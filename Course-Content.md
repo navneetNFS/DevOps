@@ -1488,7 +1488,7 @@ major difference in both is package based
 
 
 
-Some Important Directories(folders)
+###### Some Important Directories(folders)
 
 
 
@@ -1502,3 +1502,358 @@ Some Important Directories(folders)
 8. Server Data:- /var, /srv
 9. System Information :- /proc, /sys
 10. Shared libraries :- /lib, /usr/lib, /usr/local/lib
+
+
+
+###### Interview Question
+
+
+
+**What is open source software?**
+Open source software is software with source code that anyone can inspect, modify, and enhance.
+
+
+
+**Linux is a Unix like kernel, released under GPL license, created by** \_\_\_\_\_\_
+
+Linus Torvalds
+
+
+
+**Configuration data is stored in text files and these configuration files are in \_\_\_\_\_\_ Path in Linux?**
+
+/etc
+
+
+
+**Server data located in /var amd /srv.**
+
+True
+
+
+
+**RHEL \& Centos are RPM based OS \& Ubuntu is Debian Based OS.**
+
+True
+
+
+
+**Date :- 13-10-2025**
+
+
+
+cat /etc/os-release => what is os and version info
+
+
+
+\[vagrant@localhost ~]$
+
+
+
+vagrant in this is username
+
+localhost is hostname. if hostname not set then it show localhost default
+
+~ this symbol represent you r in home directory
+
+$ in this represent normal user shell
+
+
+
+
+
+\[root@localhost ~]#
+
+root in this is username
+
+localhost is hostname. if hostname not set then it show localhost default
+
+~ this symbol represent you r in home directory
+
+\# in this represent root user shell
+
+
+
+
+
+###### Interview Questions
+
+
+
+**cd / will go into root directory**
+
+after that ls it will show all folder list
+
+
+
+
+
+**How to find OS name \& Version from CLI**
+
+cat /etc/os-release
+
+
+
+**whoami command is used to find out current logged in username**
+
+true
+
+
+
+**root user home directory is \_\_\_\_.**
+
+/root
+
+
+
+###### Linux command
+
+
+
+**touch** => this command is use for creating empty files = touch <filename>.<extention>,  eg :. touch code.py
+
+
+
+if we want to create files in a loop like abc\_1.txt ..... abc\_10.txt
+
+
+
+touch <filename>\_{number\_1 ... number\_n}.txt , eg:- touch abc\_{1..10}.txt
+
+
+
+**copy file**
+
+
+
+cp <file\_name> <path\_of\_folder> , eg :- cp test\_file\_1.txt loop\_files
+
+
+
+
+
+Absolute Path
+
+cp /home/vagrant/devopsite2.txt /home/vagrant/dev/
+
+
+
+we can't directly copy another directory use -r with that
+
+
+
+cp -r dev /root/backup\_dir
+
+
+
+cp --help => this will help in getting help on cp command
+
+
+
+
+
+command		options		arguments
+
+ls
+
+ls		-l		
+
+ls		-l		/tmp/
+
+cp		-r		dev bkdir/
+
+
+
+
+
+**move file**
+
+
+
+mv <file\_name / file\_path\_with\_file\_name>.<ext> ,  eg. = mv dummfile.txt move\_foder
+
+
+
+mv ops /root/dev
+
+
+
+**rename file**
+
+mv command is also use for rename file
+
+
+
+mv dummfile.txt dummyfile.txt
+
+
+
+rename folder
+
+mv move\_foder move\_folder
+
+
+
+
+
+**move all .txt file in folder using regex**
+
+
+
+mv \*.txt text\_files
+
+
+
+
+
+**remove files**
+
+
+
+rm python\_file4.py
+
+
+
+for removing folder we need to use -r in rm command
+
+
+
+rm -r removable\_folder
+
+
+
+rm -rf \*
+
+
+
+this is for remove all folders
+
+
+
+**Vim Editor**
+
+
+
+we need vim for edit or write content in files using command like
+
+
+
+three modes in vim editor
+
+
+
+=> command mode
+
+=> insert mode (edut mode)
+
+=> extended command mode
+
+
+
+
+we need to install vim in this through command line
+
+
+
+sudo yum install vim -y
+
+
+
+1. vim <file\_name> => vim python\_file1
+2. then press i
+3. write content for your file
+4. after write press esc button
+5. than type :w after that hit enter
+6. then press esc button
+7. after this press :q then hit enter
+8. this will quit vim editor
+9. now your file is successfully edited
+
+
+
+for edit or insert new rec follow these same commands.
+
+
+
+we can use short hand command for write and quit file using **:wq**
+
+
+
+by accidently you edit the file please do this 
+
+
+
+=> press esc key
+
+=> :q!
+
+
+
+this will help you in forcefully quit.
+
+
+
+if you want to add line number in view use this command :se nu
+
+
+
+for go on last line press **shift + gg**
+
+for go on first line press **gg**
+
+for copy same line press **yy**
+
+for paste copied text using press **p**
+
+for delete line press **dd**
+
+for undo line press **u**
+
+for search text use **/**
+
+
+
+more commands but i think we can ignore for now
+
+
+
+###### Interview Question
+
+
+
+**There are three modes in VIM Editor.**
+
+
+
+**command mode**
+
+
+
+**insert mode**
+
+
+
+**extended mode**
+
+
+
+
+
+true
+
+
+
+**How to copy paste in vim editor.**
+
+
+
+In command mode (esc in vim editor)
+
+
+
+**How to search for a text in vim editor?**
+
+
+
+Hit forward slash / in command mode and type text you are searching and hit enter.
+
