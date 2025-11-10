@@ -1656,7 +1656,7 @@ command		options		arguments
 
 ls
 
-ls		-l		
+ls		-l
 
 ls		-l		/tmp/
 
@@ -1751,6 +1751,7 @@ three modes in vim editor
 
 
 
+
 we need to install vim in this through command line
 
 
@@ -1779,7 +1780,7 @@ we can use short hand command for write and quit file using **:wq**
 
 
 
-by accidently you edit the file please do this 
+by accidently you edit the file please do this
 
 
 
@@ -1856,4 +1857,154 @@ In command mode (esc in vim editor)
 
 
 Hit forward slash / in command mode and type text you are searching and hit enter.
+
+
+
+
+
+**Date :- 16-10-2025**
+
+
+
+###### Types of files in Linux
+
+
+
+File Type		First character in file listing description
+
+
+
+Regular File => -	Normal files such as text , data or executable files
+
+Dirctory => d		Files that are lists of other files
+
+Link => l		A shortcut that points to the location of actual file
+
+Special file => c	Mechanism used for input and output. such as files in /dev
+
+socket => s		a special file that provides inter-process networking protected by the file system acess control
+
+pip => p		a special file that allows processor to communicate with each other without using network socket semantics
+
+
+
+
+
+
+
+ls -l
+
+
+
+this will provide more description about file
+
+
+
+total 0
+
+drwxr-xr-x. 2 vagrant vagrant  6 Oct 13 09:26 backupfiles
+
+drwxr-xr-x. 3 vagrant vagrant 25 Oct 13 12:19 bk
+
+drwxr-xr-x. 3 vagrant vagrant 62 Oct 13 09:33 devops
+
+-rw-r--r--. 1 vagrant vagrant  0 Oct 16 06:41 dummyfile-1.txt
+
+
+
+in this -rw stands for its regular file
+
+
+
+file dummyfile-1.txt
+
+dummyfile-1.txt: ASCII text
+
+
+
+
+drwxr this stands for directory
+
+
+
+\[vagrant@localhost ~]$ file backupfiles/
+
+backupfiles/: directory
+
+
+
+brw file stands for blocked files
+
+
+
+
+
+sometime we cant able to create file if directory not available
+
+
+
+mkdir /opt/dev/ops/devops/test
+
+
+
+by providing -p after mkdir we can create that
+
+
+mkdir -p /opt/dev/ops/devops/test
+
+
+
+
+
+rm command or unlink command will remove link from file
+
+
+
+ls -lt will give timestamp also when it last edited and it will sort records according to timestamp in this latest on the top and last one is the last edited
+
+
+
+ltr will show latest in end
+
+
+
+
+
+for changing hostname
+
+
+
+we need to be root user
+
+
+
+sudo -i
+
+vim /etc/hostname
+
+
+
+edit file and type name for hostname => centos
+
+
+
+after that hostname <hostname> => hostname centos
+
+
+
+
+
+###### Interview Question
+
+
+
+**What command is used to find file type**
+
+file <filepath>
+
+
+
+**in -s <orignalFilePath> <LinkFilePath> command is used to create soft link.**
+
+true
 
